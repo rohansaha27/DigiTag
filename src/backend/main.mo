@@ -1,7 +1,12 @@
 import Array "mo:base/Array";
 import HashMap "mo:base/HashMap";
 import Principal "mo:base/Principal";
+import Hash "mo:base/Hash";
+import Iter "mo:base/Iter";
+import Text "mo:base/Text";
 import Types "./types";
+import Nat32 "mo:base/Nat32";
+import Time "mo:base/Time";
 
 actor Marketplace {
     // State variables
@@ -80,7 +85,7 @@ actor Marketplace {
     };
 
     public query func getAllProducts() : async [Types.Product] {
-        Array.fromIter(products.vals())
+        Iter.toArray(products.vals())
     };
 
     public query func getNFT(id: Text) : async ?Types.NFT {
