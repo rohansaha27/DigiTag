@@ -1,5 +1,5 @@
 {
-  "name": "luxury-nft-marketplace",
+  "name": "digitag-marketplace",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -20,7 +20,8 @@
     "@dfinity/identity": "^0.20.2",
     "lucide-react": "^0.344.0",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.22.3"
   },
   "devDependencies": {
     "@eslint/js": "^9.9.1",
