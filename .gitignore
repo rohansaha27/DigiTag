@@ -18,3 +18,5 @@ dfx.json
 identity.json
 *.pem
 node_modules
+
+.vite/
