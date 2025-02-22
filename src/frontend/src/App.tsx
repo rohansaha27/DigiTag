@@ -1,9 +1,9 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Login from './frontend/pages/Login';
-import Marketplace from './frontend/pages/Marketplace';
-import ProductDetail from './frontend/pages/ProductDetail';
-import Success from './frontend/pages/Success';
+import Login from './pages/Login';
+import Marketplace from './pages/Marketplace';
+import ProductDetail from './pages/ProductDetail';
+import Success from './pages/Success';
 
 function App() {
   return (
