@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { ShoppingBag, Watch, BellRingIcon as RingIcon, Gem, Link, Shirt, Shovel as Shoe, Search, Wallet, UserCircle, Upload } from 'lucide-react';
-import img from '../../assets/bags/bag1.png'
+import img from "../../assets/bags/bag1.png";
 
 
 type Category = {
