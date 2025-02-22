@@ -1,18 +1,22 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Login from './pages/Login';
-import Marketplace from './pages/Marketplace';
-import ProductDetail from './pages/ProductDetail';
-import Success from './pages/Success';
+import ItemDisplay from './pages/ItemDisplay';
+import CryptoWallet from './pages/CryptoWallet';
+import ProductDetails from './pages/ProductDetails';
+import PurchaseFlow from './pages/PurchaseFlow';
+import ImportNFT from './pages/ImportNFT';
 
 function App() {
   return (
     <Router>
       <Routes>
         <Route path="/" element={<Login />} />
-        <Route path="/marketplace" element={<Marketplace />} />
-        <Route path="/product/:id" element={<ProductDetail />} />
-        <Route path="/success" element={<Success />} />
+        <Route path="/marketplace" element={<ItemDisplay />} />
+        <Route path="/wallet" element={<CryptoWallet />} />
+        <Route path="/product/:id" element={<ProductDetails />} />
+        <Route path="/purchase" element={<PurchaseFlow />} />
+        <Route path="/import-nft" element={<ImportNFT />} />
       </Routes>
     </Router>
   );
