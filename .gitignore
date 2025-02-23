@@ -20,3 +20,4 @@ identity.json
 node_modules
 
 .vite/
+.dfx/
