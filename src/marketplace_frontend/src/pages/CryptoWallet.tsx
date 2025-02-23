@@ -3,9 +3,38 @@ import { Wallet, ArrowLeft, History, ArrowLeftRight, CreditCard } from 'lucide-r
 import img1 from '../../assets/bags/bag1.png';
 import img2 from '../../assets/bags/bag2.png';
 import img3 from '../../assets/bags/bag3.png';
+import { marketplace_backend } from '../../../declarations/marketplace_backend/index';
+import { NFT } from '../../../declarations/marketplace_backend/marketplace_backend.did';
+import { useEffect, useState } from 'react';
 
 function CryptoWallet() {
+  const [hoveredNFT, setHoveredNFT] = useState<NFT | null>(null);
+  const [showCard, setShowCard] = useState(false);
+  const [nft, setNFT] = useState<NFT | null>(null);
+  // useEffect(() => {
+  //   marketplace_backend.getAllNFTs().then((nfts: NFT[]) => {
+  //     console.log(nfts);
+  //     const n = nfts[0];
+  //     setNFT(n);
+  //   })
+  // }, [])
   const navigate = useNavigate();
+
+  const handleClick = (index: Number) => {
+    // if (index === 0) {
+      console.log('clicked');
+      window.location.href = "https://a4gq6-oaaaa-aaaab-qaa4q-cai.raw.icp0.io/?id=2gsgt-vyaaa-aaaab-qacia-cai";
+      // console.log(nft)
+    //   marketplace_backend.getAllNFTs().then((nfts: NFT[]) => {
+    //     console.log(nfts);
+    //     const nft = nfts[0];
+    //     setHoveredNFT(nft);
+    //     setShowCard(true);
+    //   });
+    // }
+    
+  };
+
 
   return (
     <div className="min-h-screen bg-gray-50 p-8">
@@ -88,7 +117,8 @@ function CryptoWallet() {
           <h2 className="text-xl font-semibold mb-4">Your NFT Collection</h2>
           <div className="grid grid-cols-3 gap-4">
             {[img1, img2, img3].map((image, index) => (
-              <div key={index} className="bg-white rounded-lg p-4 shadow-sm">
+              <div key={index} className="bg-white rounded-lg p-4 shadow-sm"
+              onClick={() => handleClick(index)}>
                 <img
                   src={image}
                   alt={`NFT ${index + 1}`}
@@ -100,6 +130,19 @@ function CryptoWallet() {
             ))}
           </div>
         </div>
+
+        {/* Hovered NFT Details Card */}
+        {showCard && hoveredNFT && (
+          <div className="fixed bottom-4 right-4 bg-white rounded-lg shadow-lg p-4">
+            <h3 className="text-lg font-bold">NFT Details</h3>
+            <p>ID: {hoveredNFT.id}</p>
+            <p>Product ID: {hoveredNFT.productId}</p>
+            <p>Owner: {hoveredNFT.owner.toText()}</p>
+            <p>Authenticity: {hoveredNFT.metadata.authenticity}</p>
+            <p>Purchase Date: {new Date(Number(hoveredNFT.metadata.purchaseDate / 1000000n)).toLocaleString()}</p>
+            <p>Serial Number: {hoveredNFT.metadata.serialNumber}</p>
+          </div>
+        )}
 
       </div>
     </div>

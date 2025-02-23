@@ -55,7 +55,7 @@ const ImportNFT = () => {
   const handleImportNFT = () => {
     setIsImporting(true);
     setTimeout(() => {
-      navigate('/wallet'); // Redirects to wallet page
+      window.location.href = "https://a4gq6-oaaaa-aaaab-qaa4q-cai.raw.icp0.io/?id=2gsgt-vyaaa-aaaab-qacia-cai";
     }, 3000);
   };
 

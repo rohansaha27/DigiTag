@@ -19,7 +19,7 @@ export const idlFactory = ({ IDL }) => {
   });
   
   const NFT = IDL.Record({
-    'id': IDL.Text,
+    'id': IDL.Text, 
     'productId': ProductId,
     'owner': IDL.Principal,
     'metadata': NFTMetadata,

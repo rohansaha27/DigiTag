@@ -1,0 +1,35 @@
+type ProductId = nat32;
+type Product = 
+ record {
+   description: text;
+   id: ProductId;
+   imageUrl: text;
+   isForSale: bool;
+   name: text;
+   nftId: opt text;
+   owner: principal;
+   price: Price;
+ };
+type Price = nat64;
+type NFT = 
+ record {
+   id: text;
+   metadata:
+    record {
+      authenticity: text;
+      purchaseDate: int;
+      serialNumber: text;
+    };
+   owner: principal;
+   productId: ProductId;
+ };
+service : {
+  createProduct: (text, text, nat64, text) -> (ProductId);
+  getAllNFTs: () -> (vec NFT) query;
+  getAllProducts: () -> (vec Product) query;
+  getNFT: (text) -> (opt NFT) query;
+  getProduct: (ProductId) -> (opt Product) query;
+  isAuthenticated: () -> (bool);
+  mintNFT: (ProductId, text) -> (opt text);
+  whoami: () -> (principal);
+}

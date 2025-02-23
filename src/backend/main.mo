@@ -6,8 +6,6 @@ import Text "mo:base/Text";
 import Types "./types";
 import Nat32 "mo:base/Nat32";
 import Time "mo:base/Time";
-import Array "mo:base/Array";
-import Nat "mo:base/Nat";
 
 actor Marketplace {
 
@@ -63,7 +61,7 @@ actor Marketplace {
         productId: Types.ProductId,
         serialNumber: Text
     ) : async ?Text {
-        assert(not Principal.isAnonymous(msg.caller));
+        assert(Principal.isAnonymous(msg.caller));
         
         switch (products.get(productId)) {
             case null { null };
@@ -90,6 +88,33 @@ actor Marketplace {
         }
     };
 
+        // Transfer NFT Ownership
+    public shared(msg) func transferNFTOwnership(
+        nftId: Text,
+        newOwner: Principal
+    ) : async Bool {
+        assert(Principal.isAnonymous(msg.caller)); // Ensure the caller is authenticated
+
+        switch (nfts.get(nftId)) {
+            case null { return false; };
+            case (?nft) {
+                if (nft.owner != msg.caller) {
+                    return false;
+                };
+
+                let updatedNFT: Types.NFT = {
+                    id = nft.id;
+                    productId = nft.productId;
+                    owner = newOwner;
+                    metadata = nft.metadata;
+                };
+
+                nfts.put(nftId, updatedNFT);
+                return true;
+            };
+        }
+    };
+
     // Query functions
     public query func getProduct(id: Types.ProductId) : async ?Types.Product {
         products.get(id)
@@ -101,5 +126,9 @@ actor Marketplace {
 
     public query func getNFT(id: Text) : async ?Types.NFT {
         nfts.get(id)
+    };
+
+    public query func getAllNFTs() : async [Types.NFT] {
+        Iter.toArray(nfts.vals())
     };
 };

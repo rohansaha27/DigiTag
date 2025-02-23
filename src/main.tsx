@@ -1,6 +1,6 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
-import App from './frontend/src/App';
+import App from './marketplace_frontend/src/App';
 import './index.css';
 
 createRoot(document.getElementById('root')!).render(
