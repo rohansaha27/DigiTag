@@ -1,4 +1,3 @@
-import Array "mo:base/Array";
 import HashMap "mo:base/HashMap";
 import Principal "mo:base/Principal";
 import Hash "mo:base/Hash";
@@ -7,24 +6,29 @@ import Text "mo:base/Text";
 import Types "./types";
 import Nat32 "mo:base/Nat32";
 import Time "mo:base/Time";
+import Array "mo:base/Array";
 import Nat "mo:base/Nat";
 
 actor Marketplace {
+
+    public shared (msg) func whoami() : async Principal {
+        msg.caller
+    };
+    
     // State variables
     private stable var nextProductId: Nat32 = 0;
     private var products = HashMap.HashMap<Types.ProductId, Types.Product>(
     0, 
     Nat32.equal, 
     func(x: Nat32) : Hash.Hash { Hash.hash(Nat32.toNat(x)) }
-);
+    );
 
     private var nfts = HashMap.HashMap<Text, Types.NFT>(0, Text.equal, Text.hash);
     private var users = HashMap.HashMap<Principal, Types.User>(0, Principal.equal, Principal.hash);
 
     // Authentication
     public shared(msg) func isAuthenticated() : async Bool {
-        return true;
-        not Principal.isAnonymous(msg.caller)
+        Principal.isAnonymous(msg.caller)
     };
 
     // Product Management
@@ -34,7 +38,7 @@ actor Marketplace {
         price: Nat64,
         imageUrl: Text
     ) : async Types.ProductId {
-        assert(not Principal.isAnonymous(msg.caller));
+        assert(Principal.isAnonymous(msg.caller));
         
         let productId = nextProductId;
         nextProductId += 1;

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Mail, Lock } from 'lucide-react';
 import imgg from '../../assets/logo.webp';
+import { initAuth } from './auth';
 
 function Login() {
   const [email, setEmail] = useState('');
@@ -10,8 +11,10 @@ function Login() {
 
   const handleLogin = (e: React.FormEvent) => {
     e.preventDefault();
+    initAuth();
     navigate('/marketplace');
   };
+  
 
   return (
     <div className="min-h-screen flex">  
