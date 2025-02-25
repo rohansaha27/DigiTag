@@ -1,102 +1,81 @@
-# DigiTag 🏷️ - Secure Luxury Resale with Blockchain
+# DigiTag - Secure Luxury Resale with Blockchain
 
-## 🎥 Project Demo
+## What's Our Inspiration Behind DigiTag?
+Canada’s Luxury Resale Market is expanding, yet it is increasingly undermined by counterfeit products; studies suggest that up to 30% of online luxury transactions involve inauthentic items, resulting in both financial loss and damage of the legacy.  
+Fraudulent resale incidents have become a significant concern, with many victims losing thousands of dollars and approximately 40% of cases remaining unresolved due to regulatory shortcomings. In addition, nearly 25% of online platforms lack adequate anti-counterfeit measures, leaving consumers exposed.  
 
-[![Watch the video](https://img.youtube.com/vi/YOUR_VIDEO_ID/maxresdefault.jpg)](https://www.youtube.com/watch?v=ybWR_AV5Oxg)
-
-## 🌟 What's Our Inspiration Behind DigiTag?
-Canada’s luxury resale market is expanding, yet it is increasingly undermined by counterfeit products. Studies suggest that **up to 30% of online luxury transactions involve inauthentic items**, resulting in financial loss and damage to brand legacy.
-
-- **Fraudulent resale incidents** have become a major concern, with many victims losing thousands of dollars.
-- **40% of cases remain unresolved** due to regulatory shortcomings.
-- **Nearly 25% of online platforms lack adequate anti-counterfeit measures**, exposing consumers to risks.
-
-### ✅ Our Solution: **DigiTag**
-DigiTag leverages **blockchain technology** to secure luxury transactions through **immutable ledgers and cryptographic verification**. By employing **smart contracts**, the platform enhances product authenticity and protects buyers across international markets.
+In response, DigiTag leverages blockchain technology to secure luxury transactions through immutable ledgers and cryptographic verification. By employing smart contracts, the platform offers a refined solution that enhances product authenticity and protects buyer interests across international markets.  
 
 ---
 
-## 🔹 What It Does
-**DigiTag** is a blockchain-powered web application that secures the sale and resale of **luxury items**, focusing on **Chanel handbags**. It employs **cryptographic authentication and decentralized ledgers** to verify ownership, ensuring **provenance integrity** and eliminating counterfeit risks.
+## 📺 Project Demo  
+[![Watch the video](https://img.youtube.com/vi/ybWR_AV5Oxg/maxresdefault.jpg)](https://www.youtube.com/watch?v=ybWR_AV5Oxg)  
 
-### ✨ **Key Features**
-- **🔗 Blockchain-Powered Authentication** – Each item is minted as an **NFT on the Internet Computer Protocol (ICP)** blockchain, serving as **immutable proof of ownership and authenticity**.
-- **🛑 Fraud Prevention** – The platform enforces **stringent seller identity verification**, reducing counterfeit risks.
-- **🚀 Seamless User Experience** – A **React-based interface** delivers an intuitive, **Amazon-like shopping experience**, with **robust authentication via Internet Identity (II)**.
-- **🔄 Ownership Transfer & Resale** – Authenticated **luxury items can be resold** with a **verifiable blockchain transaction history**, preserving provenance integrity.
+👉 **Click the image above** or **[watch the demo on YouTube](https://www.youtube.com/watch?v=ybWR_AV5Oxg)** to see DigiTag in action!
 
 ---
 
-## 🛠️ What Went Into Building DigiTag?
-We engineered a **seamless luxury resale marketplace** by integrating **a React-based front-end** with blockchain technology, ensuring **secure authentication, transparent transactions, and immutable ownership verification**.
+## What It Does?
+DigiTag is a blockchain-powered web application that secures the sale and resale of luxury items, focusing on Chanel handbags. It employs cryptographic authentication and decentralised ledgers to verify ownership, ensuring provenance integrity and eliminating counterfeit risks.  
 
-### 🏗 **Tech Stack**
-#### **Front-End Development**
-- **React.js**, **JavaScript**, **Tailwind CSS**  
-- Delivers a sleek, responsive, and intuitive UI.
+🌟 **Blockchain-Powered Authentication** – Each item is minted as an NFT on the Internet Computer Protocol (ICP) blockchain, serving as immutable proof of ownership and authenticity.  
 
-#### **Back-End Architecture**
-- **ICP (Internet Computer Protocol)**, **TypeScript**, **Motoko**, **Node.js**, **Next.js**
-- Ensures **high performance and scalability**.
+🌟 **Fraud Prevention** – The platform enforces stringent seller identity verification, mitigating the risk of counterfeit goods infiltrating the market.  
 
-#### **Blockchain Integration**
-- Utilizes **ICP smart contracts** and **NFT minting** for **immutable digital authentication**.
+🌟 **Seamless User Experience** – A React-based interface delivers an intuitive, Amazon-like shopping experience, complemented by robust authentication via Internet Identity (II).  
 
-#### **Security**
-- Implements **Internet Identity (II)** for **decentralized authentication**, protecting **user credentials and transaction integrity**.
-
-#### **Decentralized Infrastructure**
-- Hosted entirely on **ICP**, ensuring **tamper-proof, transparent, and censorship-resistant transactions**.
+🌟 **Ownership Transfer & Resale** – Authenticated luxury items can be resold with a verifiable blockchain transaction history, preserving provenance integrity.  
 
 ---
 
-## 📚 Lessons We Learned
-During development, we gained invaluable insights into integrating **blockchain technology** with real-world applications. Key takeaways:
+## What Went Into Building DigiTag?
+We engineered a seamless luxury resale marketplace by integrating a React-based front-end with blockchain technology, ensuring secure authentication, transparent transactions, and immutable ownership verification.  
 
-- **NFT-based authentication & smart contract development** are **powerful but complex**.
-- **Decentralized identity management** requires **balancing security with user experience**.
-- **Scalability in blockchain** is crucial for **future-proofing** against market expansion.
-- **Enhancing security without compromising UX** is a fine balance.
-
-Each challenge refined our understanding, reinforcing our commitment to **building secure, scalable, and innovative solutions**.
-
----
-
-## 🔹 Why Internet Computer Protocol (ICP)?
-We selected **Internet Computer Protocol (ICP)** for its **decentralized, scalable, and cost-effective** nature, making it ideal for **Web3 applications**.
-
-### 🔥 **Advantages of ICP Over Traditional Blockchains**
-- **❌ No Gas Fees** – Unlike Ethereum, ICP eliminates transaction fees, ensuring **cost-efficient** ownership transfers.
-- **🚀 High Scalability** – Handles growing user demand without compromising performance.
-- **🔒 Secure Authentication** – Uses **Internet Identity (II)** for **passwordless logins**, reducing fraud risks.
-- **🔗 Full On-Chain Hosting** – The entire **front-end, back-end, and database are hosted on ICP**, ensuring **tamper-proof security**.
-
-These features make **ICP the ideal blockchain solution** for DigiTag, ensuring **security, transparency, and cost-efficiency** in luxury resale.
+**Front-End Development** – Built with React, JavaScript, and Tailwind CSS, delivering a sleek, responsive, and intuitive user interface.  
+**Back-End Architecture** – Developed using ICP, TypeScript, Motoko, Node.js, and Next.js, ensuring high performance and scalability.  
+**Blockchain Integration** – Utilises ICP smart contracts and NFT minting to provide immutable digital authentication and secure ownership verification.  
+**Advanced Security** – Implements Internet Identity (II) for decentralised authentication, protecting user credentials and transaction integrity.  
+**Decentralised Infrastructure** – Hosted on the Internet Computer Protocol (ICP), enabling tamper-proof, transparent, and censorship-resistant transactions.  
 
 ---
 
-## 🛠️ How We Incorporated ICP
-DigiTag leverages **ICP’s blockchain capabilities** in multiple ways:
+## Lessons We Learned?
+In the course of development, we gained invaluable insights into the complexities of integrating blockchain technology with real-world applications. From the intricacies of NFT-based authentication and smart contract development to the challenges of decentralised identity management, each hurdle refined our understanding.  
 
-1. **NFT Authentication** – Each luxury item is **minted as an NFT on ICP**, providing **immutable ownership proof**.
-2. **Decentralized Identity (II)** – **Passwordless logins** ensure **secure authentication and prevent fraud**.
-3. **On-Chain Hosting** – The **full application is hosted on ICP**, ensuring **decentralization**.
-4. **Ownership Transfer** – ICP **smart contracts manage ownership transfers**, preventing counterfeit listings.
+We learned the importance of balancing security with user experience, ensuring seamless transactions without compromising on trust. Additionally, the need for blockchain scalability to future-proof the platform against the growing luxury resale market became a crucial focus.  
+
+These experiences have not only shaped the platform but also strengthened our approach to building secure, scalable, and innovative solutions.  
 
 ---
 
-## 🔮 Future Prospects of DigiTag
-DigiTag aims to **expand beyond handbags** and incorporate **other luxury goods** such as:
+## Why Internet Computer Protocol (ICP)?
+We selected Internet Computer Protocol (ICP) for its decentralised, scalable, and cost-effective nature, making it ideally suited for Web3 applications.  
 
-- ⌚ **Watches**
-- 💍 **Jewelry**
-- 👟 **Designer Sneakers**
+Unlike traditional blockchains, which are often hindered by high gas fees and slow transaction speeds, ICP offers several compelling advantages. It eliminates gas fees entirely, ensuring cost-efficient transactions for users. The platform’s decentralised hosting infrastructure provides a tamper-proof environment, with the entire application—front-end, back-end, and database—hosted on ICP, enhancing security.  
 
-### 🔜 **Upcoming Features**
-- **AI-Based Fraud Detection** – Improving **product authenticity verification**.
-- **Partnerships** – Collaborating with **luxury resellers & brands** to build trust.
-- **Mobile App Development** – Creating a **seamless, blockchain-powered resale app**.
+ICP’s scalability further ensures that the system can accommodate increasing user demand without compromising on performance. Its Internet Identity system allows for secure user authentication without the need for passwords, reducing the risk of fraud. Additionally, ICP’s smart contract functionality supports trustful transactions, ensuring that ownership transfers occur only when payments are verified.  
 
-Our vision is to **expand DigiTag globally**, ensuring **a secure luxury resale experience worldwide**.  
+These robust features make ICP the ideal blockchain solution for DigiTag, where security, transparency, and cost-efficiency are paramount for a secure luxury resale platform.  
 
-🚀 **Join us in securing the future of luxury resale with blockchain!**  
+---
+
+## How We Incorporated ICP?
+DigiTag leverages ICP’s powerful blockchain capabilities in multiple ways:  
+
+- **NFT Authentication** – Each item is minted as an NFT on ICP, providing immutable ownership proof.  
+- **Decentralized Identity (II)** – ICP’s passwordless logins ensure secure authentication and prevent fraud.  
+- **On-Chain Hosting** – Full application hosting on ICP ensures security and decentralisation.  
+- **Ownership Transfer** – ICP canisters manage secure ownership transfers and prevent counterfeit listings.  
+
+---
+
+## Future Prospects of DigiTag
+DigiTag is poised to expand its offerings by incorporating other luxury goods such as **watches, jewellery, and designer sneakers**, while enhancing **AI-based fraud detection** for product authenticity verification.  
+
+We aim to partner with **Canadian luxury resellers and brands** to build greater trust, as well as develop a **mobile app** for seamless blockchain-powered resale transactions.  
+
+Looking ahead, our vision is to extend DigiTag’s secure luxury resale platform **beyond Canada**, ensuring **global reach**.  
+
+Thank you for your interest in **DigiTag**, where we’re committed to securing the future of luxury resale.  
+
+Built for HackCanada 2025. 
