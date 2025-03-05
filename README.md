@@ -1,5 +1,7 @@
 # DigiTag - Secure Luxury Resale with Blockchain
 
+# Winner HackCanada 2025! (Best Cryptocurrency Hack)
+
 ## What's Our Inspiration Behind DigiTag?
 Canada’s Luxury Resale Market is expanding, yet it is increasingly undermined by counterfeit products; studies suggest that up to 30% of online luxury transactions involve inauthentic items, resulting in both financial loss and damage of the legacy.  
 Fraudulent resale incidents have become a significant concern, with many victims losing thousands of dollars and approximately 40% of cases remaining unresolved due to regulatory shortcomings. In addition, nearly 25% of online platforms lack adequate anti-counterfeit measures, leaving consumers exposed.  
@@ -77,5 +79,3 @@ We aim to partner with **Canadian luxury resellers and brands** to build greater
 Looking ahead, our vision is to extend DigiTag’s secure luxury resale platform **beyond Canada**, ensuring **global reach**.  
 
 Thank you for your interest in **DigiTag**, where we’re committed to securing the future of luxury resale.  
-
-Built for HackCanada 2025. 
